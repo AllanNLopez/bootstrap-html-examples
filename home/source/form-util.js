@@ -83,4 +83,21 @@ function getData(){
     return ob; 
 }
  
+function setObjectValsFromObject(obOrigen, obDestino) {
+    //Se asignaran valores del obDestino hacia el obDestino
+    //obtener keys de obOrigen 
+    var obOrKys = Object.keys(obOrigen);
+
+    //validar que existen cada key en el objeto destino
+    for (var i = 0; i < obOrKys.length; i++) {
+        if (obDestino.hasOwnProperty(obOrKys[i])) {
+            obDestino[obOrKys[i]] = obOrigen[obOrKys[i]];
+        } else {
+            obDestino[obOrKys[i]] = "";
+        }
+    }
+
+    return obDestino;
+
+}
  
