@@ -8,6 +8,10 @@
             body{
                 background-color: #e0e0e0;
             }
+
+            .user-item-field{
+                /*nothing here*/
+            }
         </style>
     </head>
     <body>
@@ -15,6 +19,10 @@
         <div class="container">
             <div class="row"> 
                 <div class="col"> 
+                    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                        <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
                     <div class="card">
                         <div class="card-header">
                             <h6>Informaciòn de usuario</h6>
@@ -22,31 +30,31 @@
                         <!-- Inicio de formulario de usuario -->
                         <div class="card-body">
                             <div class="row mb-2"> 
-                                <label   class="col form-control-label">Nombre Completo:</label>
-                                <input type="text" id="txtNombreCompleto" name="nombreCompleto" class="col form-control"></input>
+                                <label   class="col form-control-label ">Nombre Completo:</label>
+                                <input type="text" id="txtNombreCompleto" name="nombreCompleto" class="col form-control user-item-field"></input>
                             </div>
                             <div class="row mb-2"> 
                                 <label   class="col form-control-label">Usuario:</label>
-                                <input type="text" id="txtUsuario" name="usuario" class="col form-control"></input>
+                                <input type="text" id="txtUsuario" name="usuario" class="col form-control user-item-field"></input>
                             </div>
                             <div class="row mb-2"> 
                                 <label   class="col form-control-label">Correo:</label>
-                                <input type="text" id="txtCorreo" name="correo" class="col form-control"></input>
+                                <input type="text" id="txtCorreo" name="correo" class="col form-control user-item-field"></input>
                             </div>
                             <div class="row mb-2"> 
                                 <label   class="col form-control-label">telefono:</label>
-                                <input type="text" id="txtTelefono" name="telefono" class="col form-control"></input>
+                                <input type="text" id="txtTelefono" name="telefono" class="col form-control user-item-field"></input>
                             </div>
                             <div class="row mb-2"> 
                                 <label   class="col form-control-label">Estado:</label>
-                                <select class="col form-select" id="txtEstado" name="estado" >
+                                <select class="col form-select user-item-field" id="txtEstado" name="estado" >
                                     <option value="1">Habilitado</option>
                                     <option value="0">Deshabilitado</option> 
                                 </select>
                             </div>
                             <div class="row mb-2 mt-5">
                                 <div class="col">
-                                    <button type="button" id="btnNewUser" class="btn btn-primary btn-sm">Nuevo Usuario</button>
+                                    <button type="button" id="btnNewUser" onclick="clearUserItems()" class="btn btn-primary btn-sm">Nuevo Usuario</button>
                                 </div> 
                                 <div class="col">
                                     <button type="button" id="btnGuardar" class="btn btn-primary btn-sm">Guardar</button> 
@@ -63,5 +71,8 @@
         </div>
 
     </body>
+    <script src="../source/main.js"></script> 
+    <script src="../source/form-util.js"></script>
 </html>
  
+  
