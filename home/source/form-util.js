@@ -101,3 +101,31 @@ function setObjectValsFromObject(obOrigen, obDestino) {
 
 }
  
+function filterLaterList(pText){
+    
+    console.log(pText)
+    items = document.getElementsByClassName('list-group-item');
+
+    console.log(items )
+
+    if(items.length > 0 ){
+        for(var i=0;  i<items.length; i++){
+            tx = items[i].innerHTML.toString().toLowerCase(); 
+    
+            console.log(pText, tx.indexOf( pText.toLowerCase() ))
+    
+            if(pText.length>0){
+                if( tx.indexOf(pText) < 1 ) {
+                    document.getElementsByClassName('list-group-item')[i].remove();
+                } 
+            }else{
+                addUserListItem()
+            }
+        }
+    }else {
+        addUserListItem()
+    }
+
+
+
+}

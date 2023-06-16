@@ -24,16 +24,36 @@ function getUserCardItem( pUserInfo ){
 }
 
 function addUserListItem(){
-    document.getElementById('users-lists-items').innerHTML +=  getUserCardItem(
+    arr = [
         {
-            "v_usr_id":"4586564",
+            "v_usr_id":"123",
             "v_user_full_name":"Jonh Carter Doe",
             "v_rol_name": "",
             "v_user_email": "jonh.Doe@company.com",
             "v_user_grupo":"",
             "v_user_area":""
+        },
+        {
+            "v_usr_id":"456",
+            "v_user_full_name":"Oscar Danielo",
+            "v_rol_name": "",
+            "v_user_email": "jonh.Doe@company.com",
+            "v_user_grupo":"",
+            "v_user_area":""
+        },
+        {
+            "v_usr_id":"789",
+            "v_user_full_name":"Maria Suarez",
+            "v_rol_name": "",
+            "v_user_email": "jonh.Doe@company.com",
+            "v_user_grupo":"",
+            "v_user_area":""
         }
-    );
+    ]
+    for (var i=0; i<arr.length; i++){
+        document.getElementById('users-lists-items').innerHTML +=  getUserCardItem( arr[i] );
+    }
+    
 }
 
 function loadUserInfo(param){

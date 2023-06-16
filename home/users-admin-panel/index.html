@@ -16,10 +16,15 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-3">
-                    <div class="card vertical-lateral-content">
-                        <div class="list-group" id="users-lists-items">
-                             
+                    <div class="card ">
+                        <div class="card-header">
+                            <input class="form-control" onchange="filterLaterList(this.value)"></input>
                         </div>
+                        <div class="card-body row">
+                            <div class="list-group vertical-lateral-content" id="users-lists-items">
+                             
+                            </div>
+                        </div> 
                     </div>
                 </div>
 
@@ -36,5 +41,6 @@
             </div>
         </div>
     </body>
-    <script src="/source/main.js"></script>
+    <script src="../source/main.js"></script>
+    <script src="../source/form-util.js"></script>
 </html>
