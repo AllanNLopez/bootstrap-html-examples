@@ -101,31 +101,24 @@ function setObjectValsFromObject(obOrigen, obDestino) {
 
 }
  
-function filterLaterList(pText){
-    
-    console.log(pText)
+function filterLaterList(pText){  
     items = document.getElementsByClassName('list-group-item');
+    cont = items.length; 
 
-    console.log(items )
+    console.log(items, items.length )
 
-    if(items.length > 0 ){
-        for(var i=0;  i<items.length; i++){
+    if(items.length > 0 &&  pText.length >0){
+        for(var i=0;  i<cont; i++){
             tx = items[i].innerHTML.toString().toLowerCase(); 
     
-            console.log(pText, tx.indexOf( pText.toLowerCase() ))
-    
-            if(pText.length>0){
-                if( tx.indexOf(pText) < 1 ) {
-                    document.getElementsByClassName('list-group-item')[i].remove();
-                } 
-            }else{
-                addUserListItem()
-            }
+            console.log(i, pText, tx.indexOf( pText.toLowerCase() ), cont)
+
+            if( tx.indexOf(pText) < 0 ) {
+                document.getElementsByClassName('list-group-item')[i].remove();
+            } 
         }
     }else {
         addUserListItem()
-    }
-
-
+    } 
 
 }
