@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link   href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" 
+                rel="stylesheet" 
+                integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <style>
+            .vertical-lateral-content{
+                height: 1200px;
+                overflow-y: scroll;
+            }
+            body{
+                background-color: rgb(238, 238, 238);
+            }
+
+            .gray-bg{
+                background-color: rgb(238, 238, 238);
+            }
+
+            .border-less{
+                border-style: none;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark mb-3" style="background-color: #082147;">
+            <div class="container-fluid"> 
+                <ul class="navbar-nav ">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link " href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="navbar-toggler-icon"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <li><a class="dropdown-item" href="#">Cambiar rol</a></li>
+                          <li><a class="dropdown-item" href="#">Mi Perfil</a></li>
+                          <li><a class="dropdown-item" href="#">Salir</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0"> 
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">MyApp</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Paneles</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Ajustes</a>
+                    </li>
+                    
+                </ul>
+                <ul class="navbar-nav ">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Nombre completo del usuario
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
+                          <li><a class="dropdown-item" href="#">Cambiar rol</a></li>
+                          <li><a class="dropdown-item" href="#">Mi Perfil</a></li>
+                          <li><a class="dropdown-item" href="#">Salir</a></li>
+                        </ul>
+                    </li>
+                </ul> 
+            </div>
+        </nav> 
+
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col"> 
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <div class="card border-less">
+                        <div class="card-header gray-bg">
+                            <h4>Titulo de dashboard</h4><br>
+                            <ul class="nav nav-tabs card-header-tabs">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="true" href="#">Nombre de vista</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Link</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card-body">
+                            <div id="params1" class="row">
+                                <div class="col-4">
+                                    <div class="card card-body">
+                                        <div class="mb-3 row">
+                                            <label for="inputPassword" class="col-4 col-form-label">Password</label>
+                                            <div class="col-8">
+                                            <input type="password" class="form-control" id="inputPassword">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="card card-body">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+ </html>
