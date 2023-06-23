@@ -101,24 +101,3 @@ function setObjectValsFromObject(obOrigen, obDestino) {
 
 }
  
-function filterLaterList(pText){  
-    items = document.getElementsByClassName('list-group-item');
-    cont = items.length; 
-
-    console.log(items, items.length )
-
-    if(items.length > 0 &&  pText.length >0){
-        for(var i=0;  i<cont; i++){
-            tx = items[i].innerHTML.toString().toLowerCase(); 
-    
-            console.log(i, pText, tx.indexOf( pText.toLowerCase() ), cont)
-
-            if( tx.indexOf(pText) < 0 ) {
-                document.getElementsByClassName('list-group-item')[i].remove();
-            } 
-        }
-    }else {
-        addUserListItem()
-    } 
-
-}
