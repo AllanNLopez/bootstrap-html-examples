@@ -61,6 +61,8 @@ function addUserListItem(){
 
 
 function filterLaterList(pText){  
+    console.log(pText);
+
     document.getElementById('users-lists-items').innerHTML = '';
 
     cont = arr.length;  
