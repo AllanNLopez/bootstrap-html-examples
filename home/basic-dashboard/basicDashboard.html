@@ -66,46 +66,116 @@
                 </ul> 
             </div>
         </nav> 
-
+        <!-- Inicio de contenido -->
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col"> 
                 </div>
             </div>
-
+            <!-- Titulo del dashboard -->
             <div class="row">
                 <div class="col">
-                    <div class="card border-less">
-                        <div class="card-header gray-bg">
-                            <h4>Titulo de dashboard</h4><br>
-                            <ul class="nav nav-tabs card-header-tabs">
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="true" href="#">Nombre de vista</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Link</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="card-body">
-                            <div id="params1" class="row">
-                                <div class="col-4">
-                                    <div class="card card-body">
-                                        <div class="mb-3 row">
-                                            <label for="inputPassword" class="col-4 col-form-label">Password</label>
-                                            <div class="col-8">
-                                            <input type="password" class="form-control" id="inputPassword">
+                    <h4>Titulo de dashboard</h4>
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button pt-2 pb-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Filtros
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <!-- contenedor de parametros -->
+                                    <div class="row card-body">
+                                        <div class="col">
+                                            <div class="row mb-2"> 
+                                                <label   class="col form-control-label ">Nombre Completo:</label>
+                                                <input type="text" id="txtNombreCompleto" name="nombreCompleto" class="col form-control form-control-sm"></input>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="row mb-2"> 
+                                                <label   class="col form-control-label ">Nombre Completo:</label>
+                                                <input type="text" id="txtNombreCompleto" name="nombreCompleto" class="col form-control form-control-sm"></input>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="row mb-2"> 
+                                                <label   class="col form-control-label ">Nombre Completo:</label>
+                                                <input type="text" id="txtNombreCompleto" name="nombreCompleto" class="col form-control form-control-sm"></input>
                                             </div>
                                         </div>
                                     </div>
+                                    
                                 </div>
-                                <div class="col-8">
-                                    <div class="card card-body">
-                                        
-                                    </div>
+                            </div>
+                        </div> 
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid ps-0 pe-0 ">
+            <!-- tabs -->
+            <div class="row">
+                <div class="col">                    
+                    <!--cinta de tabs -->
+                    <div class="card mt-2 border-less"> 
+                        <div class="card-header gray-bg"> 
+                            <ul class="nav nav-tabs card-header-tabs">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="true" href="#"><h6>Nombre de vista</h6></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Nombre de vista 2</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#" >Nombre de vista 3</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- contenido de consulta -->
+            <div class="row">
+                <div class="col">
+                    <div class="card border-less">                         
+                        <div class="card-body">
+                            <!-- parametros de consulta -->
+                            <div id="params1" class="row"> 
+
+                            </div>
+                            <!-- contenido de resultados -->
+                            <div class="row">
+                                <div class="card card-body">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>col1</th>
+                                                <th>Columna 1</th>
+                                                <th>Columna 2</th>
+                                                <th>Columna 3</th>
+                                                <th>Columna 4</th>
+                                                <th>Columna 5</th>
+                                                <th>Columna 6</th>
+                                                <th>Columna 7</th>
+                                                <th>Columna 8</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr> 
+                                                <td>fila1</td>
+                                                <td>fila 1</td>
+                                                <td>fila 2</td>
+                                                <td>fila 3</td>
+                                                <td>fila 4</td>
+                                                <td>fila 5</td>
+                                                <td>fila 6</td>
+                                                <td>fila 7</td>
+                                                <td>fila 8</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                 </div>
                             </div>
                         </div>
