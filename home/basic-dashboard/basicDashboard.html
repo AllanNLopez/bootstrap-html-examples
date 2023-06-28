@@ -87,22 +87,24 @@
                                 <div class="accordion-body">
                                     <!-- contenedor de parametros -->
                                     <div class="row card-body">
+                                        <div class="col" id="params-container">
+                                            <div class="row mb-2"> 
+                                                <label   class="col form-control-label ">Desde:</label>
+                                                <input type="date" id="txtNombreCompleto" name="nombreCompleto" class="col form-control form-control-sm"></input>
+                                            </div>
+                                        </div>
                                         <div class="col">
                                             <div class="row mb-2"> 
-                                                <label   class="col form-control-label ">Nombre Completo:</label>
-                                                <input type="text" id="txtNombreCompleto" name="nombreCompleto" class="col form-control form-control-sm"></input>
+                                                <label   class="col form-control-label ">Hasta:</label>
+                                                <input type="date" id="txtNombreCompleto" name="nombreCompleto" class="col form-control form-control-sm"></input>
                                             </div>
                                         </div>
                                         <div class="col">
                                             <div class="row mb-2"> 
                                                 <label   class="col form-control-label ">Nombre Completo:</label>
-                                                <input type="text" id="txtNombreCompleto" name="nombreCompleto" class="col form-control form-control-sm"></input>
-                                            </div>
-                                        </div>
-                                        <div class="col">
-                                            <div class="row mb-2"> 
-                                                <label   class="col form-control-label ">Nombre Completo:</label>
-                                                <input type="text" id="txtNombreCompleto" name="nombreCompleto" class="col form-control form-control-sm"></input>
+                                                <select class="col form-select">
+                                                    <option value="0">Seleccione una</option>
+                                                </select>
                                             </div>
                                         </div>
                                     </div>
@@ -121,8 +123,8 @@
                     <!--cinta de tabs -->
                     <div class="card mt-2 border-less"> 
                         <div class="card-header gray-bg"> 
-                            <ul class="nav nav-tabs card-header-tabs">
-                                <li class="nav-item">
+                            <ul class="nav nav-tabs card-header-tabs" id="tabs-links">
+                                <li class="nav-item" >
                                     <a class="nav-link active" aria-current="true" href="#"><h6>Nombre de vista</h6></a>
                                 </li>
                                 <li class="nav-item">
@@ -174,6 +176,17 @@
                                                 <td>fila 7</td>
                                                 <td>fila 8</td>
                                             </tr>
+                                            <tr> 
+                                                <td>fila1</td>
+                                                <td>fila 1</td>
+                                                <td>fila 2</td>
+                                                <td>fila 3</td>
+                                                <td>fila 4</td>
+                                                <td>fila 5</td>
+                                                <td>fila 6</td>
+                                                <td>fila 7</td>
+                                                <td>fila 8</td>
+                                            </tr>
                                         </tbody>
                                     </table>
                                 </div>
@@ -184,5 +197,9 @@
             </div>
         </div>
     </body>
+    <script src="../source/main.js"></script> 
+    <script src="../source/form-util.js"></script>
+    <script src="../source/bs-dashboard-util.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 
  </html>
