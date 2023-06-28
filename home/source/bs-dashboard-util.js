@@ -33,22 +33,43 @@ function getParamItemHtml(){
         default: 
             break;
 
-    }
+    } 
 
     return v_html;
 
 }
 
-function getTabLinkItemHtml(){
+function getTabsLinksItemHtml(){
     var v_tablink = ""; 
+    var v_ul = "";
+    var active = "active";
 
-    var data = {
-        title:"",
-        id:"",
-        href:""
-    }; 
+    var data = [
+        {
+            title:"Nombre de vista 1",
+            id:"",
+            href:"#"
+        },
+        {
+            title:"Nombre de vista 2",
+            id:"",
+            href:"#"
+        },
+        {
+            title:"Nombre de vista 3",
+            id:"",
+            href:"#"
+        }
+    ];
+    
+    for(var i=0; i<data.length; i++){
+        if(i>0){ active ="" }
+        v_tablink += `<li class="nav-item"> <a class="nav-link `+active+`" href="`+data[i].href+`"><h6>`+data[i].title+`</h6></a></li>`;
+    }    
 
-    v_tablink = `<li class="nav-item"> <a class="nav-link" href="`+data.href+`">`+data.title+`</a></li>`;
+    v_ul = `<ul class="nav nav-tabs card-header-tabs" >`+ v_tablink + `</ul>`;
+
+    document.getElementById('tabs-links').innerHTML = v_ul;
 
     return v_tablink; 
 }
